@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- <StaticWebAssetBasePath>_content/$(PackageId)</StaticWebAssetBasePath> -->
+    <!-- <DisableScopedCssBundling>true</DisableScopedCssBundling> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+  </ItemGroup>
+
+
+  <!-- <ItemGroup>
+  <None Update="{Pages|Views}/Index.cshtml.css" CssScope="custom-scope-identifier" />
+</ItemGroup>
+<ItemGroup> -->
+
+<!-- Common styles across the views -->
+  <!-- <None Update="{Pages|Views}/BaseView.cshtml.css" CssScope="custom-scope-identifier" /> -->
+  <!-- Inherites the styles -->
+  <!-- <None Update="{Pages|Views}/DerivedView.cshtml.css" CssScope="custom-scope-identifier" /> -->
+<!-- </ItemGroup> -->
+<!-- for multiple files -->
+<!-- <ItemGroup>
+  <None Update="{Pages|Views}/*.cshtml.css" CssScope="custom-scope-identifier" />
+</ItemGroup> -->
+
+</Project>
